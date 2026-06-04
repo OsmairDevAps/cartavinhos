@@ -86,10 +86,7 @@ export default function WineCard({ wine, index }) {
         )}
 
         {/* Footer */}
-        <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-between">
-          <span className="font-body text-white/25 text-xs tracking-widest uppercase">
-            carta de vinhos
-          </span>
+        <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-center">
           <div className="text-gold-500/40">
             <WineGlassIcon />
           </div>

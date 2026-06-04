@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['"Cormorant Garamond"', 'serif'],
+        'display': ['"Cinzel"', 'serif'],
         'body': ['"Jost"', 'sans-serif'],
       },
       colors: {
