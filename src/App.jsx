@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './Home'
-import CartaVinhos from './CartaVinhos'
+import CartaVinhos from './cartavinhos'
 
 function App() {
   return (
