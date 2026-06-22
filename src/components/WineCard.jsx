@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 const WineGlassIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
     <path d="M8 22h8M12 11v11M5 2h14l-2 9a5 5 0 0 1-10 0L5 2z" />
@@ -56,7 +55,7 @@ export default function WineCard({ wine, index }) {
         {/* Badge de preço flutuante */}
         <div className="absolute bottom-3 right-3 bg-dark-900/90 backdrop-blur-sm border border-gold-500/30 rounded-xl px-3 py-1.5 z-20">
           <span className="font-display text-gold-400 text-lg font-medium">
-            {formatPrice(wine.valor_individual)}
+            {formatPrice(wine.valor_individual || 0)}
           </span>
         </div>
       </div>

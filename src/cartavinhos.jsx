@@ -3,6 +3,8 @@ import { supabase } from './supabaseClient'
 import Header from './components/Header'
 import WineCard from './components/WineCard'
 import LoadingSkeleton from './components/LoadingSkeleton'
+import { FiArrowLeft } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 export default function CartaVinhos() {
   const [wines, setWines] = useState([])
@@ -112,6 +114,8 @@ export default function CartaVinhos() {
             ))}
           </div>
         )}
+
+        <Link to='/' className="flex flex-row w-full justify-center items-center gap-2 mt-4"><FiArrowLeft size={24} />Voltar</Link>
       </main>
 
       {/* Footer */}
