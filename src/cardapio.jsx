@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from 'react'
 import { supabase } from './supabaseClient'
 import HeaderMenu from './components/HeaderMenu'
 import WineCard from './components/WineCard'
-import LoadingSkeleton from './components/LoadingSkeleton'
+import LoadingSkeletonMenu from './components/LoadingSkeletonMenu'
 
 export default function Cardapio() {
   const [menu, setMenu] = useState([])
@@ -54,7 +54,7 @@ export default function Cardapio() {
 
       {/* Conteúdo principal */}
       <main className="mx-4 px-6 pb-6">
-        {loading && <LoadingSkeleton />}
+        {loading && <LoadingSkeletonMenu />}
 
         {error && (
           <div className="text-center py-24">
@@ -130,7 +130,7 @@ export default function Cardapio() {
         </div>
 
         <p className="font-body text-gray-700 text-xs tracking-[0.3em] uppercase">
-          Cardápio · Preços sujeitos a alteração
+          Preços sujeitos a alteração
         </p>
       </footer >
     </div >
