@@ -94,7 +94,7 @@ export default function Cardapio() {
                         {item.subtitulo && <p className="text-gray-800 text-sm italic">{item.subtitulo}</p>}
                         {item.descricao && <p className="text-sm text-gray-600">{item.descricao}</p>}
                       </div>
-                      {item.categoria === 'CREPES' ?
+                      {String(item.valor_combo) !== '0' ?
                         <div className="flex flex-row gap-4 md:gap-8 lg:gap-16 items-center">
                           <div className="flex flex-col items-center text-blue-800">
                             <span className="font-medium">Só o crepe</span>
