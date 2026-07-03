@@ -11,7 +11,7 @@ export default function HeaderMenu() {
         </div>
 
         <div className="flex flex-row bg-blue-600 py-2">
-          <Link to='/' className="w-10 pl-2"><FiArrowLeft size={24} /></Link>
+          {/* <Link to='/' className="w-10 pl-2"><FiArrowLeft size={24} /></Link> */}
           <h1 className="flex-1 font-normal text-2xl text-white">MENU</h1>
         </div>
       </div>

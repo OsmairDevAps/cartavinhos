@@ -87,6 +87,8 @@ export default function Cardapio() {
                   <h2 className="text-2xl text-black font-bold mb-4">
                     {subcategoria}
                   </h2>
+                  {subcategoria === 'CREPES SALGADOS' && <h4 className='w-full text-right text-red-600'>*Combo = Crepe + 1 refrigerante + porção de batatas fritas</h4>}
+
                   {menuList.map((item, index) => (
                     <li key={item.id} className="flex flex-row border-l-2 border-red-500 pl-2 my-4 pb-2">
                       <div className="flex flex-col flex-1">

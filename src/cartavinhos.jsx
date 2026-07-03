@@ -115,7 +115,7 @@ export default function CartaVinhos() {
           </div>
         )}
 
-        <Link to='/' className="flex flex-row w-full justify-center items-center gap-2 mt-4"><FiArrowLeft size={24} />Voltar</Link>
+        {/* <Link to='/' className="flex flex-row w-full justify-center items-center gap-2 mt-4"><FiArrowLeft size={24} />Voltar</Link> */}
       </main>
 
       {/* Footer */}
