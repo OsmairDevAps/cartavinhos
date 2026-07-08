@@ -16,11 +16,8 @@ export default function Cardapio() {
         setLoading(true)
 
         const { data, error } = await supabase
-          .from('cardapios')
+          .from('view_lista_menu')
           .select('*')
-          .neq('categoria', 'VINHOS')
-          .eq('ativo', true)
-          .order('ordem', { ascending: true })
 
         if (error) throw error
 
@@ -73,7 +70,7 @@ export default function Cardapio() {
         {!loading && !error && menu.length === 0 && (
           <div className="text-center py-24">
             <div className="inline-flex flex-col items-center gap-4">
-              <p className="font-display text-white/40 text-2xl">Nenhum item encontrado</p>
+              <p className="font-display text-red-500 text-2xl">Nenhum item encontrado</p>
             </div>
           </div>
         )}
